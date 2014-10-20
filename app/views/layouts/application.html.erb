@@ -16,7 +16,7 @@
       <header class="navigation">
         <div class="navigation-wrapper">
           <a href="javascript:void(0)" class="logo">
-            <img src="images/logo.png" alt="Logo Image">
+            <%= image_tag "logo.png" %>
           </a>
           <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
           <div class="nav">
@@ -29,7 +29,7 @@
               <div class="search-and-submit">
                 <!-- <input type="search" placeholder="About Search" /> -->
                 <button type="submit">
-                  <p>About Search<img src="images/search.png" alt="Search Icon"></p>
+                  <p>About Search<%= image_tag "search.png" %></p>
                 </button>
               </div>
             </div>
@@ -69,20 +69,19 @@
 
 
 
-
 <!-- /////////////////////////Quad Grid Section///////////////////////////// -->
 
 <div class="grid-items-lines">
-  <a href="javascript:void(0)" class="grid-item" style="background: url(images/Acejack.jpg); background-size: cover">
+  <a href="/articles/1" class="grid-item" style="background: url(<%= image_path("Acejack.jpg") %>); background-size: cover">
     <h1>BlackJack!</h1>
   </a>
-  <a href="javascript:void(0)" class="grid-item" style="background: url(images/Hipster.jpg); background-size: cover">
+  <a href="/articles/2" class="grid-item" style="background: url(<%= image_path("Hipster.jpg") %>); background-size: cover">
     <h1>HipsterLevelFinalBoss</h1>
   </a>
-  <a href="javascript:void(0)" class="grid-item" style="background: url(images/Sitting.jpg); background-size: cover">
+  <a href="/articles/3" class="grid-item" style="background: url(<%= image_path("Sitting.jpg") %>); background-size: cover">
     <h1>The Life</h1>
   </a>
-  <a href="javascript:void(0)" class="grid-item" style="background: url(images/House.jpg); background-size: cover">
+  <a href="/articles/4" class="grid-item" style="background: url(<%= image_path("House.jpg") %>); background-size: cover">
     <h1>Hollanda</h1>
   </a>
   <div class="right-cover"></div>
@@ -94,7 +93,7 @@
 
 <footer class="footer-2">
   <div class="footer-logo">
-    <img src="images/theironyard.png" alt="Logo image">
+    <%= image_tag "theironyard.png" %>
   </div>
     <ul>
       <li><a href="javascript:void(0)">The Iron Yard Copyright 2013, All Rights Reserved</a></li>
