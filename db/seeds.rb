@@ -9,10 +9,10 @@
 Author.destroy_all
 Article.destroy_all
 
-Author.create(name: 'Adam')
-Author.create(name: 'Benjamin')
-Author.create(name: 'Camille')
-Author.create(name: 'Doug')
+Author.create(name: 'Adam', photo_url: "http://31.media.tumblr.com/66c9366f0969b641c44f163892d0ef99/tumblr_mu703nfZOV1s5mugdo1_500.jpg")
+Author.create(name: 'Benjamin', photo_url: "Benjamin.jpg")
+Author.create(name: 'Camille', photo_url: "Camille.jpg")
+Author.create(name: 'Doug', photo_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQId6hqwp66eNBIA5CbvOmi8fa3XQ0XvBEGbJoQFjHvtFLYyuAZ")
 
 Article.create(author_id: 1, content: "First fluke deadlights poop deck Sink me red ensign brigantine blow the man down hempen halter landlubber or just lubber gaff. Log chantey deadlights starboard sutler scuppers flogging gangplank come about interloper. Tack pirate crack Jennys tea cup main sheet furl schooner strike colors ho shrouds clap of thunder.")
 Article.create(author_id: 2, content: "Second wherry Spanish Main knave log dead men tell no tales run a shot across the bow flogging mizzenmast aye hardtack. Run a rig keelhaul hulk knave tender chase guns starboard belaying pin swab clap of thunder. Come about Privateer lanyard bucko blow the man down Brethren of the Coast scallywag splice the main brace sheet coffer.")

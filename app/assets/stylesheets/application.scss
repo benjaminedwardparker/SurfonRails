@@ -470,10 +470,12 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
 
   .images-wrapper h1 {
     margin-bottom: 1em;
+    color: #0E2745;
+    padding-left: 3em;
   }
 
   .images-wrapper h4 {
-    color: blue;
+    color: #3579DC;
     font-size: 1.5em;
     margin-bottom: 1em;
   }
@@ -495,6 +497,7 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
 
   .content h1 {
     margin-bottom: .9em;
+    color: #0E2745
   }
 
   .content h2 {
@@ -502,7 +505,11 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
     padding-left: 1em;
     margin-left: 3px;
     margin-bottom: 1em;
-    color: blue;
+    color: #3579DC;
+  }
+
+  .content h3 {
+    color: #3579DC;
   }
 
   .content h4 {
@@ -785,4 +792,18 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
       }
     }
   }
+}
+
+.img-thumb {
+  height: 4em;
+  width: 4em;
+  border-radius: 2em;
+}
+
+.img-thumb-centered {
+  height: 4em;
+  width: 4em;
+  border-radius: 2em;
+  margin-left: 8em;
+  margin-right: 8em;
 }

@@ -7,7 +7,7 @@
 
 <p>
   <strong>Photo url:</strong>
-  <%= @author.photo_url %>
+  <%= image_tag @author.photo_url, :class => "img-thumb"%>
 </p>
 
 <%= link_to 'Edit', edit_author_path(@author) %> |

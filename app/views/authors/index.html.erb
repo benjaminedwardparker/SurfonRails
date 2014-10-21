@@ -13,7 +13,7 @@
     <% @authors.each do |author| %>
       <tr>
         <td><%= author.name %></td>
-        <td><%= author.photo_url %></td>
+        <td><%= image_tag author.photo_url, :class => "img-thumb" unless author.nil? %></td>
         <td><%= link_to 'Show', author %></td>
         <td><%= link_to 'Edit', edit_author_path(author) %></td>
         <td><%= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' } %></td>

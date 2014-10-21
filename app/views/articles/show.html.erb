@@ -11,21 +11,23 @@
     <div class="content">
 
     <h1>Scourge of the Seven Seas</h1>
-    <p>
-      <strong>Author:</strong>
-      <%= @article.author.name %>
-    </p>
+    <h3><%= @article.author.name %></h3>
+    <%= image_tag @article.author.photo_url, :class => "img-thumb"%>
 
+    <p></p>
     <p>
       <%= @article.content %>
     </p>
     <h2>Shiver me timbers!</h2>
+    <p>Coxswain Shiver me timbers schooner spanker yawl Buccaneer jack weigh anchor Gold Road lee. Quarter topgallant chantey pink killick fore Spanish Main long boat lugger furl. Letter of Marque belay yardarm capstan bilge rat holystone boatswain brigantine mutiny yard.</p>
+    <p>Ballast bounty Spanish Main hang the jib jolly boat American Main cackle fruit capstan Chain Shot lanyard. Hang the jib Jolly Roger main sheet dead men tell no tales yardarm spyglass clap of thunder Privateer topmast yawl. Ho clipper spyglass rigging lee hardtack Sail ho salmagundi Sea Legs topmast.</p>
     <h4><%= image_tag "comments.png" %>Read Comments</h4>
     <h4><%= image_tag "later.png" %>Read Later</h4>
     <h4><%= image_tag "share.png" %>Share this post</h4>
   </div>
   <div class="images-wrapper">
-    <h1>Marie Celeste</h1>
+    <%= image_tag @article.author.photo_url, :class => "img-thumb-centered"%>
+    <h1><%= @article.author.name %></h1>
     <p><%= image_tag "Leo.jpg" %></p>
     <h4>My Little Brother</h4>
     <p>Barbary Coast hail-shot yawl doubloon knave lad killick. Yo-ho-ho Brethren of the Coast lass parrel ho mizzen Cat o'nine tails. Jolly Roger matey rigging jib chase fathom barque. </p>
