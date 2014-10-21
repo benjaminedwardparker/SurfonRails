@@ -5,6 +5,7 @@
 
 
 $base-accent-color: #1478c2;
+$blue: #0E2745;
 
 
 // ////////////////////start nav-bar//////////////////////////
@@ -483,6 +484,11 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
   .images-wrapper p {
     color: #D3D3D3;
     margin-bottom: 2em;
+    opacity: 0.4;
+    //background: rgba($blue, 0.6) no-repeat center center fixed;
+  }
+  p:hover {
+    opacity: 1.0;
   }
 
   .content {
@@ -608,9 +614,16 @@ $side-image-border: 1px solid darken(transparentize($side-image-background-botto
       @include grid-item-columns($grid-item-columns);
     }
 
-    &:hover {
-      background: transparentize($grid-item-color, .95);
-    }
+    .overlay {
+    background: rgba($blue, 0.6) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+   }
+   &:hover {
+    .overlay {
+      background: none;
+     }
+   }
   }
 
   .grid-item img {
